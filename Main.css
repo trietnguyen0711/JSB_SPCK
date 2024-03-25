@@ -1,0 +1,716 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Body {
+    background-color: #121212;
+}
+
+.PositionDistance {
+    height: 0px;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.NoneDistanceLeft {
+    width: 380px;
+}
+
+.NoneNormal1 {
+    width: 10px;
+    height: 1000px;
+    background: #000000;
+}
+
+.NoneNormal2 {
+    width: 22px;
+    height: 1000px;
+    background-color: #121212;
+}
+
+.PositionLeft {
+    position: fixed;
+    display: flex;
+    width: 380px;
+    height: 885px;
+    background: #000000;
+    z-index: 100;
+}
+
+.Left {
+    width: 100%;
+    height: 100%;
+}
+
+.Choice {
+    width: 100%;
+    height: 100%;
+}
+
+.Header {
+    width: 100%;
+    height: 20%;
+    background-color: #121212;
+    margin: 0px 0px 10px;
+    border-radius: 10px;
+}
+
+.Header>.T,
+.R {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0px 25px;
+    white-space: pre-wrap;
+    cursor: pointer;
+}
+
+.Header>.T {
+    padding: 20px 0px 5px 0px;
+    position: relative;
+    overflow: hidden;
+    width: 23%;
+}
+
+.Header>.T::before {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    background: white;
+    content: ' ';
+    bottom: 0;
+    transition: 0.7s;
+    transform: translateX(-110%);
+}
+
+.Header>.T:hover::before {
+    transform: translateX(400%);
+}
+
+.Header>.R {
+    padding-top: 10px;
+    color: #999999;
+    transition: 0.8s;
+}
+
+.Header>.R:hover {
+    color: #ffffff;
+}
+
+.BoxSearch {
+    width: 74%;
+    height: 21%;
+    overflow: hidden;
+    background: transparent;
+    margin: 22px 25px;
+    border-radius: 10px;
+    position: relative;
+    outline: 0;
+}
+
+.BoxSearch>button {
+    font-size: 13px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    background: #999999;
+    border: 0;
+    outline: unset;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.Z {
+    width: 0%;
+    height: 100%;
+    outline: unset;
+    transition: 0.8s;
+}
+
+.BoxSearch:hover .Z {
+    width: 100%;
+    padding: 10px 10px 10px 34px;
+}
+
+.BoxSearch:hover button {
+    border-radius: unset;
+}
+
+.Search {
+    width: 100%;
+    height: 75%;
+    background-color: #121212;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Library {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.Library>.T {
+    overflow: hidden;
+    width: 24%;
+    height: 100%;
+    color: #999999;
+    margin: 0px 0px 0px 25px;
+    white-space: pre-wrap;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+}
+
+.Library>.T::before {
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 15px;
+    height: 3px;
+    background: white;
+    bottom: 38%;
+    transform: translateX(-15px);
+    transition: 0.7s;
+}
+
+.Library>.T:hover::before {
+    transform: translateX(100px);
+}
+
+.Library>.T:hover {
+    color: #ffffff;
+}
+
+.Library>.R {
+    width: 20%;
+    height: 100%;
+    color: #828282;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0px 13px;
+}
+
+.Library>.R>i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 30px;
+    transition: 0.8s;
+}
+
+.Library>.R>i:hover {
+    color: #ffffff;
+    box-shadow: 0px 0px 5px 2px #ffffff;
+}
+
+.Intro {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+}
+
+.Intro>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    border-radius: 10px;
+    background: #232323;
+    transition: 0.8s;
+}
+
+.Intro>div:hover {
+    color: #ffffff;
+    background-color: #828282;
+    box-shadow: 0px 0px 5px 2px #ffffff;
+}
+
+.Intro>div>a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.Intro>.T {
+    margin: 0px 10px 0px 25px;
+    padding: 0px 10px;
+}
+
+.Intro>.R {
+    padding: 0px 10px;
+}
+
+.Topic {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    justify-content: space-between;
+}
+
+.Topic>i {
+    color: #999999;
+    margin-left: 22px;
+    font-size: 15px;
+}
+
+.Topic>i:hover {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.Topic>a {
+    text-decoration: none;
+    color: #999999;
+    font-size: 15px;
+    margin-right: 20px;
+    white-space: pre-wrap;
+}
+
+.Topic>a:hover {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.Photos {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Photos>.Right {
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-gap: 5px;
+    color: white;
+}
+
+.Photos>.Right>div {
+    color: #a2a2a2;
+}
+
+.Photos>.Right>a {
+    text-decoration: none;
+    color: white;
+}
+
+.Photos>.Left {
+    width: 50px;
+    height: 50px;
+    margin: 0px 20px;
+}
+
+.Views>.Left {
+    background: url(imgproject/Summer.jpg) bottom;
+    border-radius: 30px;
+}
+
+.Views>.Right>div>i {
+    color: #c49d6a;
+}
+
+.Flowers>.Left {
+    background: url(imgproject/Spring.webp);
+    border-radius: 30px;
+}
+
+.Flowers>.Right>div>i {
+    color: #eb8fe3;
+}
+
+.House>.Left {
+    background: url(imgproject/spring1.jpg) bottom;
+    border-radius: 30px;
+}
+
+.House>.Right>div>i {
+    color: #325906;
+}
+
+.PositionRight {
+    position: fixed;
+    width: 100%;
+    height: 88.5px;
+    display: flex;
+    background-color: #000000;
+    z-index: 10;
+}
+
+.NoneLeft {
+    width: 526px;
+    height: 0px;
+    background-color: #000000;
+}
+
+.RightMain {
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+}
+
+.RightMain>.Head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.RightMain>.Head>.T {
+    width: 10%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+}
+
+.RightMain>.Head>.T>i {
+    width: 20%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+    transition: 0.8s;
+}
+
+.RightMain>.Head>.T>i:hover {
+    color: #ffffff;
+    background-color: #828282;
+    box-shadow: 0px 0px 5px 2px #ffffff;
+}
+
+.RightMain>.Head>.R {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.RightMain>.Head>.R>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.RightMain>.Head>.R>ul>li {
+    margin-left: 10px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.RightMain>.Head>.R>ul>li:hover {
+    color: #ffffff;
+    background-color: #828282;
+    box-shadow: 0px 0px 5px 2px #ffffff;
+}
+
+.Pre {
+    width: 160px;
+    color: #000000;
+    background: white;
+}
+
+.Pre>a {
+    color: black;
+    text-decoration: none;
+}
+
+.Set {
+    width: 160px;
+    background-color: #000000;
+    color: white;
+    white-space: pre-wrap;
+}
+
+.Set>a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.Ic {
+    width: 40px;
+    background-color: #000000;
+    color: white;
+}
+
+.Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.Content>.Left {
+    min-width: 391px;
+    max-width: 391px;
+    height: auto;
+    background: black;
+}
+
+.Content>.Right {
+    width: 100%;
+    height: 100%;
+}
+
+.Top {
+    width: 100%;
+    height: 88.5px;
+}
+
+.BottomMainContent {
+    width: 100%;
+    height: 1200px;
+    background-color: #121212;
+}
+
+.InsideContent {
+    width: 140%;
+    height: 430px;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.BottomMainContent>a {
+    display: block;
+    width: 230px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 23px;
+    color: white;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+
+.BottomMainContent>a:hover {
+    background: #999;
+    box-shadow: inset -10px -2px 18px 1px #ce5454;
+}
+
+.Box {
+    width: 17%;
+    height: 95%;
+    background: #232323;
+    margin: 10px 23px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.Box:hover {
+    background: grey;
+}
+
+.Box:hover .Order {
+    background: black;
+    transition: 1s;
+}
+
+.Box:hover .Order>a {
+    color: white;
+}
+
+.Box:hover h3 {
+    color: black;
+    transition: 1s;
+}
+
+.BoxImg {
+    width: 58%;
+    height: 36%;
+    border-radius: 50%;
+    transition: 0.8s;
+    overflow: hidden;
+    margin: 15px auto;
+}
+
+.BoxImg>Img {
+    width: 100%;
+    height: 100%;
+}
+
+.Box:hover .BoxImg {
+    width: 100%;
+    height: 50%;
+    margin-top: 0;
+    border-radius: unset;
+}
+
+.Box>h3 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #befcfb;
+}
+
+.Box>p {
+    width: 80%;
+    margin: 0 auto;
+    transition: 0.8s;
+    color: white;
+}
+
+.Box:hover .Transition {
+    opacity: 0;
+}
+
+.InformationDetail {
+    position: absolute;
+    width: 88%;
+    height: 42%;
+    top: 61%;
+    left: 10%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Box:hover .InformationDetail {
+    transform: unset;
+    opacity: 1;
+}
+
+.InformationDetail>div {
+    display: flex;
+    align-items: center;
+    height: 20%;
+}
+
+.Price {
+    position: relative;
+    z-index: 10;
+}
+
+.Price>span {
+    margin-right: 10px;
+}
+
+
+.Choice>div>p {
+    position: absolute;
+    top: 44%;
+    left: 26%;
+    width: 20%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: green;
+    transition: 0.5s;
+    opacity: 0
+}
+
+.Choice1:hover .P1 {
+    opacity: 1
+}
+
+.Choice2:hover .P2 {
+    opacity: 1
+}
+
+.Choice3:hover .P3 {
+
+    opacity: 1
+}
+
+
+.Time>span {
+    width: 50%;
+}
+
+.Time>.Choice {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Time>.Choice>div {
+    padding: 2px;
+    width: calc(100%/3);
+    height: 50%;
+    background: red;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.Time>.Choice>div:hover {
+    box-shadow: 0px 0px 4px 4px gainsboro;
+}
+
+
+.TimeLine>input {
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    outline: unset;
+    border: 0;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.InformationDetail:hover {
+    opacity: 1;
+}
+
+.Order {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.75s;
+    position: absolute;
+    bottom: 3%;
+    left: 25%;
+    border-radius: 30px;
+}
+
+.Order>a {
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Order:hover {
+    box-shadow: inset 0px 0px 0px 9px white;
+}

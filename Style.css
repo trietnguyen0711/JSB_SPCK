@@ -1,0 +1,1704 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.HeaderPosition {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.na {
+    width: 1920px;
+    height: 100%;
+    background-color: white;
+}
+
+.in {
+    width: 1;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.InLeft {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.Logo {
+    width: 138px;
+    height: 50px;
+    background: url(imgproject/backgroundimg.png) no-repeat center/cover;
+    position: relative;
+}
+
+.Logo>a {
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    top: 9%;
+    left: 28%;
+    font-weight: 800;
+    color: #86533b;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.ContentMore>.Content>h1::before {
+    display: block;
+    content: " ";
+    width: 20%;
+    height: 3px;
+    background: #000000;
+    transition: 0.7s;
+    transform: translateX(-100%);
+}
+
+.ContentMore>.Content>h1:hover::before {
+    transform: translateX(600%);
+}
+
+.ContentMore>.Content>h1::after {
+    display: block;
+    content: " ";
+    width: 20%;
+    height: 3px;
+    background: black;
+    transition: 0.7s;
+    transform: translateX(-100%);
+    position: absolute;
+    bottom: 0;
+}
+
+.ContentMore>.Content>h1:hover::after {
+    transform: translateX(600%);
+}
+
+.left {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.left>li {
+    width: calc(100%/4);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left>li:hover {
+    border-radius: 20px;
+    background: black;
+    box-shadow: rgb(144, 148, 149) 0px 0px 0px 10px inset;
+    transition: all 0.75s;
+    color: white;
+}
+
+.HeaderContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    color: BLACK;
+    transition: 1s;
+}
+
+.HeaderContent:hover {
+    color: whitesmoke;
+    font-size: 17px;
+}
+
+
+.InRight {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.InRight>i {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.none {
+    width: 1px;
+    height: 24px;
+    background: #dee6ea;
+    margin-left: 10px;
+}
+
+.right {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin: 0;
+    margin-right: 10px
+}
+
+.right>li {
+    width: calc(100%/2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black
+}
+
+.right>li:hover {
+    border-radius: 20px;
+    background: black;
+    box-shadow: inset 0px 0px 0px 5px #909495;
+    transition: 0.75s;
+}
+
+.right>li>a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    padding: 10px;
+    transition: 0.75s;
+}
+
+.right>li>a:hover {
+    color: white;
+}
+
+.RightEffect {
+    width: 25%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    background: #fa4616;
+    transition: 1s;
+}
+
+.RightEffect:hover {
+    background-color: black;
+    box-shadow: inset 0px 0px 0px 6px #909495;
+    ;
+}
+
+.RightEffect>a {
+    color: black;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.RightEffect>a:hover {
+    color: white;
+}
+
+.none1 {
+    width: 100%;
+    height: 50px;
+}
+
+.CarouselContainer {
+    width: 1900px;
+    height: 500px;
+}
+
+.ImgIcon {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 6%;
+    top: 20%;
+    font-size: 10px;
+    color: antiquewhite;
+}
+
+.ImgIcon>a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ImgIcon>a:hover {
+    color: green;
+}
+
+.ImgContent {
+    width: 35%;
+    text-align: start;
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: antiquewhite;
+}
+
+.ImgContent>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50%;
+    background-color: #fa4616;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 1s;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ImgContent>a>i {
+    margin-left: 10px;
+}
+
+.ImgContent>a:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 1px 5px 13px 5px gray;
+}
+
+.carousel-control-prev {
+    width: 40px;
+    right: 13px;
+}
+
+.carousel-control-next {
+    width: 40px;
+    right: 0px;
+}
+
+.content {
+    width: 1920px;
+    height: 680px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.content>.Logo {
+    margin: 0 auto;
+    height: 142px;
+    width: 262px;
+}
+
+.content>.Logo>i {
+    width: 150px;
+    left: 22%;
+    top: 20%;
+    font-size: 30px;
+    position: absolute;
+    font-weight: 800;
+    color: #86533b;
+}
+
+.content>h2 {
+    margin: 30px 0px;
+    font-weight: 600;
+}
+
+.content>p {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.H {
+    width: 100%;
+    height: 245px;
+    margin: 0 auto;
+    background: #f7f7f7;
+    position: relative;
+}
+
+.ND {
+    width: 1920px;
+    height: 510px;
+    display: flex;
+    justify-content: center;
+    background: #f7f7f7;
+}
+
+.ND>a {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+.ND>a:hover {
+    color: aqua;
+}
+
+.Winter {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    background-color: #dee6ea;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.Winter>.Left {
+    width: 50%;
+    height: 25%;
+    margin-left: 40px;
+}
+
+.decorate {
+    width: 100px;
+    height: 4px;
+    background: black;
+    margin: 20px 0px 35px;
+}
+
+.Right {
+    width: 50%;
+    height: 100%;
+}
+
+.Right>img {
+    width: 100%;
+    height: 100%;
+}
+
+.Left>h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin: 0px 0px 20px;
+    color: black;
+}
+
+.Left>p {
+    width: 90%;
+    font-size: 25px;
+    margin: 0px 0px 20px;
+    color: black;
+}
+
+.Left>a {
+    padding: 10px;
+    border-radius: 50px;
+    width: 20%;
+    font-size: 40px;
+    height: auto;
+    background: #b7b8ba;
+    transition: 1s;
+    text-decoration: none;
+    color: black;
+}
+
+.Left>a:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 1px 5px 13px 5px gray;
+}
+
+.BackgroundSeasons {
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    background: #f7f7f7;
+}
+
+.Seasons {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    background: #f7f7f7;
+    margin: 5px;
+}
+
+.Seasons>.Left {
+    width: 50%;
+    margin-left: 40px;
+}
+
+.Seasons>.Right {
+    width: 50%;
+}
+
+.Seasons.Autumn {
+    background-color: #9f6837;
+    height: 400px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.Seasons.Spring {
+    background-color: #dabed4;
+    height: 400px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.Seasons.Summer {
+    background-color: #ecc98b;
+    height: 418px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.More {
+    width: 1920px;
+    height: 600px;
+    background-color: #f7f7f7;
+}
+
+.More>.Top {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TopContent {
+    width: 33%;
+}
+
+.TopContent>.Decoration {
+    width: 100%;
+    height: 5px;
+    background-color: #fa4616;
+    margin: 0 auto;
+}
+
+.TopContent>h1 {
+    margin: 35px 0px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.ContentMore {
+    width: 95%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.ContentMore>.Content {
+    width: 30%;
+    height: 80%;
+}
+
+.ContentMore>.Content>.Decoration {
+    width: 125px;
+    height: 2px;
+    background-color: #fa4616;
+}
+
+.ContentMore>.Content>h1 {
+    margin: 13px 0px;
+    font-size: 40px;
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+}
+
+.ContentMore>.Content>p {
+    font-size: 25px;
+}
+
+.ContentImg {
+    width: 1920px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContentImg>div {
+    width: 65%;
+    height: 100%;
+    position: relative;
+}
+
+.ContentImg>div>img {
+    width: 100%;
+    height: 80%;
+}
+
+.ContentImg>div>.Content {
+    position: absolute;
+    width: 60%;
+    height: 33%;
+    left: 21%;
+    bottom: 1%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.AboutUs {
+    height: 250px;
+    width: 1920px;
+    display: flex;
+    background-color: #121212;
+}
+
+.AboutUs>.Left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.AboutUs>.Left>.Circle {
+    position: absolute;
+    color: white;
+}
+
+.AboutUs>.Left>.Circle>i {
+    font-size: 5px;
+}
+
+.AboutUs>.Left>.Circle.Width {
+    width: 52%;
+    top: 10%;
+    left: 24%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.AboutUs>.Left>.Circle.Height {
+    top: 10%;
+    left: 76%;
+}
+
+.AboutUs>.Left>img {
+    width: 50%;
+    height: 68%;
+}
+
+.AboutUs>.Right {
+    height: 100%;
+    width: 50%;
+    color: white;
+    padding-left: 20px;
+}
+
+.AboutUs>.Right>.Faded {
+    color: #b7b8ba;
+    margin: 10px 0px;
+}
+
+.AboutUs>.Right>h2 {
+    font-weight: 500;
+    margin: 5px 0px;
+}
+
+.Footer {
+    width: 1920px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.InFooter {
+    width: 92%;
+    height: 100%;
+}
+
+.InFooter>.FooterContent {
+    width: 100%;
+    height: calc(100%/3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.InFooter>.Top>ul {
+    width: 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.InFooter>.Top>ul>li>a {
+    color: #909495;
+    text-decoration: none;
+
+}
+
+.InFooter>.Medium {
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+.InFooter>.Medium>a {
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+}
+
+.InFooter>.Bottom {
+    width: 100%;
+    height: calc(100%/3);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.InFooter>.Bottom>h4 {
+    margin: 0;
+    margin-right: 30px;
+}
+
+.InFooter>.Bottom>.Icon {
+    width: 35%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.LastIcon {
+    width: 32px;
+    height: 34px;
+    background: #909495;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    transition-delay: 0.2s;
+}
+
+.LastIcon:hover {
+    color: white;
+}
+
+.Facebook:hover {
+    background: blue;
+}
+
+.Youtube:hover {
+    background: red;
+}
+
+.Twitter:hover {
+    background: aqua;
+}
+
+.Instagram:hover {
+    background: pink;
+}
+
+.Toolip {
+    width: 240%;
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+
+.LastIcon:hover .Toolip {
+    transform: translateY(-175%);
+    opacity: 1;
+}
+
+.Toolip::after {
+    display: block;
+    content: " ";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    transform: translateY(157%) rotate(45deg);
+}
+
+.Facebook>.Toolip::after {
+    background: blue;
+}
+
+.Youtube>.Toolip::after {
+    background: red;
+}
+
+.Twitter>.Toolip::after {
+    background: aqua;
+}
+
+.Instagram>.Toolip::after {
+    background: pink;
+}
+
+.Facebook>.Toolip {
+    background: blue;
+}
+
+.Youtube>.Toolip {
+    background: red;
+}
+
+.Twitter>.Toolip {
+    background: aqua;
+}
+
+.Instagram>.Toolip {
+    background: pink;
+}
+
+.carousel-indicators {
+    opacity: 0;
+}
+
+.Media {
+    display: none;
+}
+
+@media only screen and (max-width: 1490px) and (min-width: 990px) {
+    .ImgContent>a {
+        width: 60%;
+    }
+
+    .ND {
+        height: 600px;
+    }
+
+    .Seasons.Autumn {
+        height: 450px;
+    }
+
+    .Seasons.Spring {
+        height: 450px;
+    }
+
+    .Seasons.Summer {
+        height: 450px;
+    }
+
+    .InRight {
+        justify-content: start;
+    }
+
+
+    .InRight>i {
+        width: 6%;
+    }
+
+    .right {
+        width: 55%;
+    }
+
+    .InLeft {
+        width: 60%;
+    }
+
+    .content {
+        height: 800px;
+    }
+
+    .InFooter>.Top>ul {
+        width: 26%;
+    }
+
+    .TopContent {
+        width: 50%;
+    }
+
+    .ContentImg>div {
+        width: 85%;
+    }
+
+    .AboutUs>.Left>img {
+        width: 70%;
+    }
+
+    .AboutUs>.Left>.Circle.Width {
+        width: 84%;
+        left: 8%;
+    }
+
+    .AboutUs>.Left>.Circle.Height {
+        left: 89%;
+    }
+}
+
+@media only screen and (max-width: 990px) and (min-width:690px) {
+    .ImgContent>a {
+        width: 84%;
+    }
+
+    .AboutUs>.Left>.Circle.Width {
+        width: 84%;
+        left: 8%;
+    }
+
+
+    .ContentMore>.Content {
+        width: 73%;
+    }
+
+    .AboutUs>.Left>.Circle.Height {
+        left: 89%;
+    }
+
+    .AboutUs>.Left>img {
+        width: 70%;
+    }
+
+    .TopContent {
+        width: 50%;
+    }
+
+    .ND {
+        height: 850px;
+    }
+
+    .Winter {
+        display: block;
+    }
+
+    .Winter>.Left {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 50px;
+    }
+
+    .Right {
+        width: 100%;
+        height: 70%;
+    }
+
+    .Seasons {
+        position: relative;
+    }
+
+    .Seasons>.Left {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        margin-left: 40px;
+        height: 50%;
+    }
+
+    .Seasons>.Right {
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        height: 50%;
+    }
+
+    .Seasons.Autumn {
+        height: 850px;
+        display: block;
+    }
+
+    .Seasons.Spring {
+        height: 850px;
+        display: block;
+    }
+
+    .Seasons.Summer {
+        height: 850px;
+        display: block;
+    }
+
+    .InRight {
+        justify-content: start;
+    }
+
+
+    .InRight>i {
+        width: 6%;
+    }
+
+    .right {
+        width: 55%;
+    }
+
+    .InLeft {
+        width: 60%;
+    }
+
+    .content {
+        height: 800px;
+    }
+
+    .InFooter>.Top>ul {
+        width: 40%;
+    }
+
+    .MediaNone {
+        display: none;
+    }
+
+    .right>.MediaNone {
+        display: none;
+    }
+
+    .right>li {
+        width: 100%;
+    }
+
+    .right {
+        width: 45%;
+    }
+
+    .RightEffect {
+        width: 40%;
+    }
+
+    .left>li {
+        width: 32%;
+    }
+
+    .left>.MediaNone {
+        display: none;
+    }
+
+    .ContentMore {
+        display: block;
+    }
+
+    .ContentMore>.Content {
+        width: 73%;
+        height: calc(100%/3);
+        margin: 0 auto;
+    }
+
+    .More {
+        height: 1200px;
+    }
+
+    .More>.Top {
+        width: 100%;
+        height: 24%;
+    }
+
+    .ContentImg>div {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 690px) and (min-width:550px) {
+
+    .left>.MediaNonePart2 {
+        display: none;
+    }
+
+    .ImgContent {
+        width: 80%;
+    }
+
+    .ImgContent>a {
+        display: none;
+    }
+
+    .content {
+        height: 470px;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    .content>h2 {
+        width: 52%;
+        margin: 0 auto;
+    }
+
+    .H {
+        height: 65px;
+    }
+
+    .content>p {
+        width: 63%;
+    }
+
+    .AboutUs>.Left>.Circle.Width {
+        width: 84%;
+        left: 8%;
+    }
+
+    .AboutUs>.Left>.Circle.Height {
+        left: 89%;
+    }
+
+    .AboutUs>.Left>img {
+        width: 70%;
+    }
+
+    .TopContent {
+        width: 50%;
+    }
+
+    .ND {
+        height: 1000px;
+    }
+
+    .Winter {
+        display: block;
+    }
+
+    .Winter>.Left {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 50px;
+    }
+
+    .Right {
+        width: 100%;
+        height: 70%;
+    }
+
+    .Seasons {
+        position: relative;
+    }
+
+    .Seasons>.Left {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        margin-left: 40px;
+        height: 50%;
+    }
+
+    .Seasons>.Right {
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        height: 50%;
+    }
+
+    .Seasons.Autumn {
+        height: 900px;
+        display: block;
+    }
+
+    .Seasons.Spring {
+        height: 900px;
+        display: block;
+    }
+
+    .Seasons.Summer {
+        height: 900px;
+        display: block;
+    }
+
+    .InRight {
+        justify-content: start;
+        width: 55%;
+    }
+
+
+    .InRight>i {
+        width: 6%;
+    }
+
+    .right {
+        width: 55%;
+    }
+
+    .InLeft {
+        width: 45%;
+    }
+
+    .left {
+        padding: 0;
+        width: 49%;
+    }
+
+    .InFooter>.Top>ul {
+        width: 40%;
+    }
+
+    .MediaNone {
+        display: none;
+    }
+
+    .right>.MediaNone {
+        display: none;
+    }
+
+    .right>li {
+        width: 100%;
+    }
+
+    .right {
+        width: 45%;
+        padding: 0;
+    }
+
+    .RightEffect {
+        width: 45%;
+    }
+
+    .left>li {
+        width: 100%;
+    }
+
+    .left>.MediaNone {
+        display: none;
+    }
+
+    .ContentMore {
+        display: block;
+    }
+
+    .ContentMore>.Content {
+        width: 73%;
+        height: calc(100%/3);
+        margin: 0 auto;
+    }
+
+    .More {
+        height: 1200px;
+    }
+
+    .More>.Top {
+        width: 100%;
+        height: 24%;
+    }
+
+    .ContentImg>div {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .Media {
+        display: block;
+    }
+
+    .ImgContent {
+        width: 33%;
+        text-align: start;
+        position: absolute;
+        left: 20%;
+        top: 53%;
+        transform: translateY(-50%);
+        color: antiquewhite;
+    }
+
+    .Box {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .Box>div {
+        height: 60%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        border: 1px solid grey
+    }
+
+    .MediaIcon {
+        height: 100%;
+        width: 20%;
+        position: absolute;
+        top: 1%;
+        left: 0%;
+        font-size: 6px;
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Box>div>Input {
+        width: 100%;
+        height: 100%;
+        font-size: 10px;
+        padding: 5px 10px 5px 15px;
+        outline: unset;
+        border: none;
+    }
+
+    .HeaderPosition {
+        height: 25px;
+    }
+
+    .Logo {
+        width: 65px;
+        height: 25px;
+    }
+
+    .Logo>a {
+        width: 40px;
+        font-size: 7px;
+    }
+
+    .HeaderContent {
+        font-size: 8px;
+    }
+
+    .HeaderContent:hover {
+        font-size: 7px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .left>li:hover {
+        box-shadow: rgb(144, 148, 149) 0px 0px 0px 4px inset;
+    }
+
+    .right {
+        margin-right: 5px;
+        width: 45%;
+        display: flex;
+        padding-left: unset;
+        align-items: center;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .InRight {
+        width: 80%;
+    }
+
+    .InRight>i {
+        display: none;
+    }
+
+    .right>li {
+        height: 85%;
+        width: 100%;
+    }
+
+    .right>li>a {
+        font-size: 12px;
+        height: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    .InLeft {
+        width: 17%;
+    }
+
+    .right>.MediaNone {
+        display: none
+    }
+
+    .RightEffect {
+        font-size: 12px;
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .RightEffect:hover {
+        box-shadow: inset 0px 0px 0px 3px #909495;
+    }
+
+    .none1 {
+        height: 25px;
+    }
+
+    .CarouselContainer {
+        height: 185px;
+    }
+
+    .ImgContent>h2 {
+        left: -48%;
+        top: -260%;
+        width: 278%;
+        text-align: center;
+        position: relative;
+        font-size: 18px;
+    }
+
+    .ImgContent>.H2Second {
+        text-align: center;
+        top: -170%;
+        width: 279%;
+        left: -49%;
+    }
+
+    .ImgContent>a {
+        width: 120%;
+        height: 50%;
+        font-size: 15px;
+        position: relative;
+        left: 27%;
+    }
+
+    .ImgContent>a>i {
+        display: none;
+    }
+
+    .ImgIcon {
+        display: none;
+    }
+
+    .content {
+        height: 212px;
+        margin-top: 20px;
+    }
+
+    .H {
+        height: 33px;
+    }
+
+    .content>.Logo {
+        display: none;
+    }
+
+    .content>.Logo>i {
+        width: 72px;
+        left: 19%;
+        top: 21%;
+        font-size: 11px;
+    }
+
+    .content>h2 {
+        font-size: 18px;
+        margin: 10px 0px;
+    }
+
+    .content>p {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    iframe {
+        display: none
+    }
+
+    .ND {
+        height: 390px;
+    }
+
+    .Winter {
+        display: block;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .Right {
+        width: 100%;
+        height: 50%;
+    }
+
+    .decorate {
+        width: 55px;
+        height: 1px;
+        margin-bottom: 7px;
+        margin-top: 10px;
+    }
+
+    .Seasons>.Right {
+        width: 100%;
+        height: 50%;
+    }
+
+    .Seasons>.Left {
+        width: 100%;
+        height: 50%;
+    }
+
+    .Left>h1 {
+        font-size: 20px;
+        margin-bottom: 8px;
+        text-align: unset;
+    }
+
+    .Left>p {
+        font-size: 10px;
+        margin: 0px 0px 13px;
+    }
+
+    .Left>a {
+        font-size: 9px;
+    }
+
+    .TopContent {
+        width: 75%;
+    }
+
+    .TopContent>.Decoration {
+        height: 4px;
+    }
+
+    .TopContent>h1 {
+        font-size: 25px;
+        margin: 15px 0px;
+    }
+
+    .ContentMore {
+        display: block;
+        width: 100%;
+    }
+
+    .ContentMore>.Content>h1 {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+
+    .ContentMore>.Content>p {
+        font-size: 15px;
+    }
+
+    .ContentMore>.Content>.Decoration {
+        width: 30%;
+        height: 3px;
+        background-color: #fa4616;
+        margin: 0 auto;
+    }
+
+    .More {
+        height: 590px;
+    }
+
+    .More>.Top {
+        height: 30%;
+    }
+
+    .ContentImg>div {
+        width: 90%;
+    }
+
+    .ContentMore>.Content {
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .ContentImg {
+        height: 310px;
+        width: 100%;
+    }
+
+    .ContentInside>h2 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .ContentInside>p {
+        font-size: 12px;
+    }
+
+    .AboutUs {
+        height: 400px;
+        display: block;
+    }
+
+    .AboutUs>.Left {
+        height: 40%;
+        width: 100%;
+    }
+
+    .AboutUs>.Right {
+        margin: 0 auto;
+        height: 50%;
+        width: 60%;
+    }
+
+    .AboutUs>.Left>.Circle>i {
+        font-size: 2px;
+    }
+
+    .AboutUs>.Right>.Faded {
+        font-size: 10px;
+    }
+
+    .AboutUs>.Right>h2 {
+        font-size: 18px;
+    }
+
+    .AboutUs>.Right>ul {
+        font-size: 12px;
+    }
+
+    .AboutUs>.Left>img {
+        width: 80%;
+        height: 90%;
+    }
+
+    .AboutUs>.Left>.Circle.Width {
+        width: 90%;
+        left: 4%;
+    }
+
+    .AboutUs>.Left>.Circle.Height {
+        opacity: 0;
+    }
+
+    .Footer {
+        height: 150px;
+    }
+
+    .InFooter>.Top>ul {
+        display: block;
+        height: 100%;
+        width: 40%;
+        margin: unset;
+    }
+
+    .InFooter>.Top>ul>li {
+        height: 50%;
+    }
+
+    .InFooter>.Top>ul>li>a {
+        font-size: 12px;
+    }
+
+    .InFooter>.Medium>a {
+        font-size: 15px;
+    }
+
+    .InFooter>.Bottom>h4 {
+        color: grey;
+        font-size: 15px;
+    }
+
+    .fa-brands,
+    .fab {
+        font-size: 12px;
+    }
+
+    .LastIcon {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .Toolip {
+        font-size: 6px;
+    }
+
+    .Toolip::after {
+        width: 4px;
+        height: 4px;
+        transform: translateY(182%) rotate(45deg);
+    }
+
+    .LastIcon:hover .Toolip {
+        transform: translateY(-161%);
+    }
+
+    .InFooter>.Medium {
+        border: none;
+    }
+
+    .carousel-control-next-icon {
+        width: 15px;
+    }
+
+    .carousel-control-prev-icon {
+        width: 15px;
+    }
+
+    .Seasons {
+        position: relative;
+    }
+
+    .Seasons.Autumn {
+        border-radius: 15px;
+        height: 325px;
+    }
+
+    .Seasons.Spring {
+        border-radius: 15px;
+        height: 325px;
+    }
+
+    .Seasons.Summer {
+        border-radius: 15px;
+        height: 325px;
+    }
+
+    .Winter>.Left {
+        position: absolute;
+        margin-left: 25px;
+        width: 100%;
+        height: 50%;
+        bottom: 0%;
+    }
+
+    .Seasons>.Left {
+        position: absolute;
+        margin-left: 25px;
+        width: 100%;
+        height: 50%;
+        bottom: 0%;
+    }
+
+    .ContentImg>div>img {
+        width: 100%;
+        height: 85%;
+    }
+
+    .ContentImg>div>.Content {
+        left: 11.5%;
+        bottom: 0%;
+        height: 40%;
+        width: 80%;
+    }
+
+    .ContentInside {
+        width: 80%;
+    }
+
+    .InFooter>.FooterContent {
+        justify-content: space-around;
+    }
+
+    .InFooter>.Bottom {
+        justify-content: center;
+    }
+}

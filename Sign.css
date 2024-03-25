@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Các tên thường được sử dụng */
+.CenterBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+.Container {
+    height: 100%;
+}
+
+.InContainer {
+    width: 1920px;
+    height: 100vh;
+    background: url(imgproject/background6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.MainContent {
+    width: 50%;
+    height: 491px;
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Circle {
+    background-color: white;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    top: 50%;
+    left: 47%;
+}
+
+.Left {
+    width: 50%;
+    height: 100%;
+    background: url(imgproject/background4.jpg) bottom;
+}
+
+.LogoContainer {
+    width: 100%;
+}
+
+.Logo {
+    width: 138px;
+    height: 50px;
+    background: url(imgproject/backgroundimg.png) no-repeat center/cover;
+    position: relative;
+}
+
+.Logo>a {
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    font-weight: 800;
+    color: #86533b;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.InLeft {
+    width: 100%;
+    height: 64%;
+    text-align: center;
+
+}
+
+.InLeft>h1 {
+    margin: 90px 0px 5px 0px;
+}
+
+.InLeft>p {
+    color: grey;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Faded {
+    color: #5a6ccf;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Faded:hover {
+    text-decoration: underline;
+}
+
+.InLeft>.Faded {
+    margin-bottom: 25px;
+}
+
+input {
+    height: 10%;
+    width: 60%;
+    margin: 10px 0px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid grey;
+}
+
+
+.InLeft>div {
+    width: 60%;
+    height: 12%;
+    background: aqua;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+.InLeft>div>h2 {
+    height: 100%;
+}
+
+.InLeft>div:hover {
+    box-shadow: inset 2px -1px 4px 8px #32afac;
+}
+
+.Right {
+    width: 50%;
+    height: 100%;
+    background: url(imgproject/DaLat.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Right>.Content {
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.Right>.Content>h1 {
+    margin: 138px 0px 10px 0px;
+    color: white;
+}
+
+.Right>.Content>h3 {
+    color: white;
+}
+
+.Right>.Icon {
+    height: 8%;
+    width: 100%;
+    margin-bottom: 156px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.LastIcon {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    background: #909495;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    transition-delay: 0.2s;
+}
+
+.LastIcon:hover {
+    color: white;
+}
+
+.Facebook:hover {
+    background: blue;
+}
+
+.Youtube:hover {
+    background: red;
+}
+
+.Twitter:hover {
+    background: aqua;
+}
+
+.Instagram:hover {
+    background: pink;
+}
+
+
+.Toolip {
+    width: 255%;
+    height: 74%;
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+
+.LastIcon:hover .Toolip {
+    transform: translateY(-175%);
+    opacity: 1;
+}
+
+.Toolip::before {
+    display: block;
+    content: " ";
+    width: 11.5px;
+    height: 11.5px;
+    position: absolute;
+    transform: translateY(157%) rotate(45deg);
+}
+
+.Facebook>.Toolip::before {
+    background: blue;
+}
+
+.Youtube>.Toolip::before {
+    background: red;
+}
+
+.Twitter>.Toolip::before {
+    background: aqua;
+}
+
+.Instagram>.Toolip::before {
+    background: pink;
+}
+
+.Facebook>.Toolip {
+    background: blue;
+}
+
+.Youtube>.Toolip {
+    background: red;
+}
+
+.Twitter>.Toolip {
+    background: aqua;
+}
+
+.Instagram>.Toolip {
+    background: pink;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+    .Circle {
+        left: 45%;
+    }
+
+    input,
+    .InLeft>div {
+        height: 35px;
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width:500px) {
+    body {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: grey;
+    }
+
+    .InContainer {
+        background: gray;
+        width: 600px;
+        height: 545px;
+    }
+
+    .Container {
+        background: gray;
+    }
+
+    .MainContent {
+        display: block;
+        border-radius: 30px;
+        width: 90%;
+        height: 90%;
+    }
+
+    .Right {
+        width: 100%;
+        background: white
+    }
+
+    .Left {
+        width: 100%;
+        height: 60%;
+    }
+
+    .InLeft>h1 {
+        font-size: 45px;
+        margin: 15px 0px 13px 0px;
+    }
+
+    .Logo {
+        width: 100px;
+        height: 65px;
+    }
+
+    .Logo>a {
+        font-size: 15px;
+        width: 92px;
+        top: 22%;
+        left: 24%;
+    }
+
+    .InLeft>p {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        height: 27px;
+        width: 224px;
+        margin: 14px 0px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .InLeft {
+        height: 100%;
+    }
+
+    .InLeft>div {
+        display: none;
+    }
+
+    .InLeft>div>h2 {
+        font-size: 10px;
+    }
+
+    .Right>.Content {
+        display: none;
+    }
+
+    .InLeft>div:hover {
+        box-shadow: inset 2px -1px 4px 4px #32afac;
+    }
+
+    .Faded {
+        color: grey;
+        font-size: 20px;
+    }
+
+    .Circle {
+        display: none;
+    }
+
+    .Right>.Content>h1 {
+        display: none;
+    }
+
+    .Right>.Content>h3 {
+        font-size: 10px;
+        color: bisque;
+        font-weight: 600;
+    }
+
+    .Icon>a {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .Right>.SignUp {
+        margin-top: 125px;
+    }
+
+    .Toolip {
+        font-size: 15px;
+        width: 181%;
+        height: 61%;
+    }
+
+    .Toolip::before {
+        width: 11px;
+        height: 11px;
+    }
+
+    .Right>.Icon {
+        position: absolute;
+        left: -1%;
+        top: 65%;
+        margin-bottom: unset;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: grey;
+    }
+
+    .InContainer {
+        background: gray;
+    }
+
+    .Container {
+        background: gray;
+    }
+
+    .MainContent {
+        width: 400px;
+        display: block;
+        border-radius: 30px;
+        height: 90%;
+    }
+
+    .InContainer {
+        width: 1920px;
+        height: 500px;
+    }
+
+    .Right {
+        width: 100%;
+        background: white
+    }
+
+    .Left {
+        width: 100%;
+        height: 60%;
+    }
+
+    .InLeft>h1 {
+        font-size: 45px;
+        margin: 15px 0px 13px 0px;
+    }
+
+    .Logo {
+        width: 100px;
+        height: 65px;
+    }
+
+    .Logo>a {
+        font-size: 15px;
+        width: 92px;
+        top: 22%;
+        left: 24%;
+    }
+
+    .InLeft>p {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        height: 27px;
+        width: 224px;
+        margin: 14px 0px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .InLeft {
+        height: 100%;
+    }
+
+    .InLeft>div {
+        display: none;
+    }
+
+    .InLeft>div>h2 {
+        font-size: 10px;
+    }
+
+    .Right>.Content {
+        display: none;
+    }
+
+    .InLeft>div:hover {
+        box-shadow: inset 2px -1px 4px 4px #32afac;
+    }
+
+    .Faded {
+        color: grey;
+        font-size: 20px;
+    }
+
+    .Circle {
+        display: none;
+    }
+
+    .Right>.Content>h1 {
+        display: none;
+    }
+
+    .Right>.Content>h3 {
+        font-size: 10px;
+        color: bisque;
+        font-weight: 600;
+    }
+
+    .Icon>a {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .Right>.SignUp {
+        margin-top: 125px;
+    }
+
+    .Toolip {
+        font-size: 15px;
+        width: 181%;
+        height: 61%;
+    }
+
+    .Toolip::before {
+        width: 11px;
+        height: 11px;
+    }
+
+    .Right>.Icon {
+        position: absolute;
+        left: -1%;
+        top: 65%;
+        margin-bottom: unset;
+    }
+}
